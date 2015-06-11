@@ -96,7 +96,7 @@
           <target>1.6</target>
         </configuration>
       </plugin>
-    </plugins>
+    
     
         <!-- Bien dich sang jar bang mvn install assembly:assembly  -->
        <plugin>
@@ -116,6 +116,6 @@
           <target>1.7</target>
         </configuration>
       </plugin>
-    
+    </plugins>
   </build>
 </project>
