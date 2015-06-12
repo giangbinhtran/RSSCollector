@@ -126,7 +126,7 @@ public class Import {
 		Date today = new Date();
 		String todate = formatter.format(today);
 		
-		if (fromdate =="1W") {
+		if (fromdate.equals("1W")) {
 			//1 week ago
 			long one_week_ago = today.getTime() - (7 * 24 * 60 * 60 * 1000);
 			Date one_week_date = new Date(one_week_ago);
