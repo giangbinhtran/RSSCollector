@@ -121,7 +121,7 @@ public class EUMSSI_DBQ {
 	    		n.setPublishedDate( publisheddate); 
 	    		n.setUpdatedDate( updateddate) ;
 	    		n.setCategories( categories) ;
-	    		n.setPageHTML(page) ;
+	    		n.setPageHTML("NA") ;
 	    		n.setContent(content);
 	    		n.setSourceID (sourceid) ;
 	    		n.setCrawledDate( crawleddate); 
