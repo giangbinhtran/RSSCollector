@@ -115,22 +115,25 @@ public class Import {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("@param: \toutputfile fromdate");
+		System.out.println("@param: \toutputfile fromdate todate");
 		System.out.println("\t\t-outputfile: name of json file");
-		System.out.println("\t\t-fromdate: yyyy-MM-dd format, or 1W to indicate 1 week ago");
+		System.out.println("\t\t-fromdate: yyyy-MM-dd format, or 1W to indicate 1 week ago until today");
+		System.out.println("\t\t-fromdate: yyyy-MM-dd format");
 		if (args.length<2) System.exit(0);
 		String outputfile = args[0];
 		String fromdate = args[1];
+		String todate = args[2];
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		
 		Date today = new Date();
-		String todate = formatter.format(today);
+		
 		
 		if (fromdate.equals("1W")) {
 			//1 week ago
 			long one_week_ago = today.getTime() - (7 * 24 * 60 * 60 * 1000);
 			Date one_week_date = new Date(one_week_ago);
 			fromdate = formatter.format(one_week_date);
+			todate = formatter.format(today);
 		}
 		System.out.println("from " + fromdate + "\tto " + todate);
 		
