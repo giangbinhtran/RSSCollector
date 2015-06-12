@@ -10,8 +10,7 @@ public class Eumssi_DBHandler {
     private static final String dbClassName = "com.mysql.jdbc.Driver";
     
     //change the connection to your local mysql
-    //private static final String CONNECTION = "jdbc:mysql://db.l3s.uni-hannover.de:3306/experts";
-    private static final String CONNECTION = "jdbc:mysql://db.l3s.uni-hannover.de:3306/eumssi";
+    private static final String CONNECTION = "jdbc:mysql://localhost:3306/eumssi";
     public synchronized static Connection getConnection()
     {
         Connection con = null;
