@@ -65,9 +65,12 @@ public class EUMSSI_DBQ {
     }
     
     public void connect() {
-    	if(Experts_DBHandler.isClosed(con)) {
-            con = Experts_DBHandler.getConnection();
-        }
+//    	if(Experts_DBHandler.isClosed(con)) {
+//            con = Experts_DBHandler.getConnection();
+//        }
+    	if (Eumssi_DBHandler.isClosed(con)) {
+    		con = Eumssi_DBHandler.getConnection();
+    	}
     }
     
     public ArrayList<NewsArticle> getNews(String fromdate, String todate) throws FileNotFoundException, UnsupportedEncodingException {
