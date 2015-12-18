@@ -119,7 +119,7 @@ public class Import {
 		System.out.println("\t\t-outputfile: name of json file");
 		System.out.println("\t\t-fromdate: yyyy-MM-dd format, or 1W to indicate 1 week ago until today");
 		System.out.println("\t\t-fromdate: yyyy-MM-dd format");
-		if (args.length<2) System.exit(0);
+		if (args.length<3) System.exit(0);
 		String outputfile = args[0];
 		String fromdate = args[1];
 		String todate = args[2];
