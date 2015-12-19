@@ -246,10 +246,9 @@ public class EUMSSI_DBQ {
 	    		if (iterable.first()==null) {
 	    			db.getCollection(this._collection).insertOne(mdoc);
 	    			System.out.println("Insert into the db " + id);
-	    			System.exit(0);
 	    		}
 	    		else {
-	    			System.out.println("Document " + urlid + " has been indexed");
+	    			System.out.println("Document " + urlid + "");
 	    		}
              }
 	     }catch(SQLException sqle) {
